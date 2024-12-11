@@ -1,0 +1,574 @@
+/* Reset some basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the font family for the whole page */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #28a745; /* Green background */
+    padding: 10px 0;
+}
+
+.navbar .nav-link {
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.navbar .nav-link:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Welcome Section */
+#welcome {
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#welcome h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+#welcome p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* About Section */
+#about {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #e9f7e4; /* Light green background */
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #28a745; /* Green color for the title */
+}
+
+#about p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #28a745; /* Green background */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    font-size: 1em;
+}
+
+/* Make content inside sections more responsive and centered */
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Add some spacing to the navbar links */
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Make sure the sections are spaced out */
+section {
+    margin-bottom: 40px;
+}
+/* The causes page  */
+#causes {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#causes h1 {
+    font-size: 2.8em;
+    margin-bottom: 40px;
+}
+
+#causes p {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Individual Cause Item */
+.cause-item {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-left: 6px solid #28a745;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.cause-item h2 {
+    color: #28a745; /* Green color */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.cause-item p {
+    color: #555;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+/* External Links as Buttons */
+.cause-item .external-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cause-item .external-links a {
+    background-color: #28a745; /* Green color */
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.cause-item .external-links a:hover {
+    background-color: #218838; /* Darker green */
+}
+
+.cause-item .external-links a:focus {
+    outline: none;
+    background-color: #198754; /* Even darker green */
+}
+
+/* Table Styling for Summary */
+#causes .summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 50px;
+}
+
+#causes .summary-table th, #causes .summary-table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#causes .summary-table th {
+    background-color: #28a745; /* Green color */
+    color: white;
+    font-size: 1.2em;
+}
+
+#causes .summary-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#causes .summary-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+#causes .summary-table td {
+    color: #555;
+    font-size: 1.1em;
+}
+
+/* External Links Section */
+#causes .external-links-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#causes .external-links-section a {
+    color: #28a745; /* Green color */
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+#causes .external-links-section a:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #causes {
+        padding: 20px;
+    }
+
+    #causes h1 {
+        font-size: 2.5em;
+    }
+
+    .cause-item h2 {
+        font-size: 1.7em;
+    }
+
+    .cause-item p {
+        font-size: 1em;
+    }
+
+    .cause-item .external-links a {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    #causes .summary-table th, #causes .summary-table td {
+        font-size: 1em;
+    }
+
+    #causes .external-links-section a {
+        font-size: 1em;
+        margin-right: 10px;
+    }
+}
+/* effects styling  */
+/* Effects Page Specific Styles */
+.effects-section {
+    font-family: 'Roboto', sans-serif;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.effects-section h1 {
+    font-size: 2.8em;
+    color: #28a745; /* Green color */
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.effects-section .intro-text,
+.effects-section .detail-text {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.effects-section .section-title {
+    font-size: 2.5em;
+    color: #28a745;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Image Gallery */
+.effects-section .image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    flex-wrap: wrap; /* Ensures that images wrap on smaller screens */
+}
+
+.effects-section .effect-image {
+    max-width: 100%; /* Ensures images do not exceed their container width */
+    width: 80%; /* You can adjust this percentage to control the size */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    object-fit: cover; /* Ensures the images maintain their aspect ratio */
+    max-height: 400px; /* Limit the height to avoid images going beyond the screen */
+}
+
+
+/* Summary Table Styling */
+.summary-table-container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.summary-table-title {
+    font-size: 1.8em;
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.summary-table th, .summary-table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.summary-table th {
+    background-color: #28a745;
+    color: white;
+    font-size: 1.2em;
+}
+
+.summary-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.summary-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.summary-table td {
+    color: #555;
+    font-size: 1.1em;
+}
+
+/* External Link Button */
+.external-links-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.external-link-button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.external-link-button:hover {
+    background-color: #218838;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .effects-section h1 {
+        font-size: 2.5em;
+    }
+
+    .effects-section .intro-text,
+    .effects-section .detail-text {
+        font-size: 1em;
+    }
+
+    .effects-section .section-title {
+        font-size: 2em;
+    }
+
+    .effects-section .summary-table th,
+    .effects-section .summary-table td {
+        font-size: 1em;
+    }
+
+    .effects-section .external-link-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+    @media (max-width: 768px) {
+        .effects-section .effect-image {
+            width: 90%; /* Adjusts the image size for smaller screens */
+        }
+    }
+}
+
+/* Solutions  */
+/* Solutions Section */
+#solutions {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f4f8f1; /* Light green background */
+    border-radius: 8px;
+}
+
+#solutions h1 {
+    font-size: 2.8em;
+    color: #28a745; /* Green color */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.solution-description {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Solution Cards */
+.solutions-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.solution-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.solution-card h2 {
+    color: #28a745;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.solution-card p {
+    color: #555;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.solution-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Solutions Summary Table */
+.solutions-summary {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.solutions-summary h2 {
+    font-size: 2.2em;
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.solutions-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.solutions-table th, .solutions-table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.solutions-table th {
+    background-color: #28a745; /* Green color */
+    color: white;
+    font-size: 1.2em;
+}
+
+.solutions-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.solutions-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.solutions-table td {
+    color: #555;
+    font-size: 1.1em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #solutions {
+        padding: 20px;
+    }
+
+    #solutions h1 {
+        font-size: 2.5em;
+    }
+
+    .solution-card h2 {
+        font-size: 1.6em;
+    }
+
+    .solution-card p {
+        font-size: 1em;
+    }
+
+    .solutions-table th, .solutions-table td {
+        font-size: 1em;
+    }
+}
+/* refrences */
+.references-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2em;
+    color: #2a5d34; /* Green color for the title */
+    margin-bottom: 30px;
+}
+
+/* Individual reference styles */
+.reference {
+    margin-bottom: 20px;
+}
+
+.reference p {
+    font-size: 1.1em;
+    color: #444;
+}
+
+.reference a {
+    color: #2a5d34;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.reference a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 600px) {
+    .page-title {
+        font-size: 1.6em;
+    }
+    .reference p {
+        font-size: 1em;
+    }
+}
